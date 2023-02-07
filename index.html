@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Hemant Modi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/118f438c97.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="transition.js"></script>
+</head>
+
+<body>
+    <main data-barba="container" data-barba-namespace="about-section">
+            <div class="animate-this button">
+                <a href="index.html"></a>
+            </div>
+        </div>
+    </main>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Pacman logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achivements">Achivements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Aspiring Software Developer</p>
+                <h1>Hi, I am <span class="name">Hemant Modi</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo_2023-01-31_12-15-45.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a tech-enthusiast with a passion for software development. I have 
+                    honed my coding skills through my studies and personal projects, with 
+                    proficiency in C, C++, and Python. In my free time, I enjoy playing cricket 
+                    and immersing myself in online video games. Beyond my love for technology, 
+                    I have a keen interest in startups and am always seeking new challenges in 
+                    the field. I am eager to contribute my skills to a dynamic and innovative 
+                    team, where I can continue to grow and make a positive impact.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cloud Computing</span><br>Microsoft Azure Certification</li>
+                            <li><span>Programming</span><br>HackerRank Certificates</li>
+                            <li><span>Web Development</span><br>Working on projects!!</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2022 - Current</span><br>Mozilla Firefox Club</li>
+                            <li><span>January 2023 - Current</span><br>Personal Project</li>
+                            <li><span>January 2023 - Current</span><br>Group Project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009 - 2021</span><br>High School from St.Xaviers School, Jaipur</li>
+                            <li><span>2021 - Ongoing</span><br>B.Tech in Computer Science from Vellore Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>ClubHub</h2>
+                    <p>It is a Club Management System with a lot of features that helps in 
+                    smooth functioning of the clubs or student communities in the college.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h2>College Eateries</h2>
+                    <p>It is a Food ordering website in which college students can order food from 
+                    the restraunt and pickup their order when ready.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development</h2>
+                    <p>I am currently working on a personal portfolio website.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="achivements">
+        <div class="container">
+            <h1 class = "sub-title">My Achivements</h1>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="images/azurelogo.png" alt="">
+                    <div class="layer">
+                        <h3>Microsoft Azure Certification</h3>
+                        <p>I gained all the theoritical knowledge of how cloud works and
+                        what all services are provided by Microsoft in their cloud platform.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/gcp.png" alt="">
+                    <div class="layer">
+                        <h3>Google Cloud Platform</h3>
+                        <p>I attended more than 100labs and gave the skill test for 15 different
+                        services provided by Google on GCP.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/hackerrank.png" alt="">
+                    <div class="layer">
+                        <h3>HackerRank Certificates</h3>
+                        <p>I am a 5 star HackerRank coder and I have passed 3 Certifications on
+                        HackerRank platform.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> hemantmodi101@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8824937253</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/hemantmodiind/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/notthegujratimodi/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B918824937253&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1D90cGT2aYIocSjxe2W4C7pm3O16NqHFJ/view?usp=share_link" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"></div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzoEAuXrfFZk_AMs5hcXi4_psdnFjev7DOJDUEbSXtC8JB4wJygreAAedx4Mu-aQYho/exec'
+    const form = document.forms['google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
