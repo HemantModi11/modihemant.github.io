@@ -30,7 +30,6 @@ body{
     background-image: url(images/FinalBackground.jpg);
     background-size: cover;
     background-position: center;
-    /* background-position-x: 150; */
 }
 
 .name{
@@ -401,12 +400,12 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-with: 600px){
+@media only screen and (max-width: 600px){
     #header{
         background-image: url(images/MobileBackground.jpg);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 30%;
         font-size: 16px;
     }
     .header-text h1{
